@@ -1,6 +1,5 @@
-# Anemoia Handheld - A Custom PCB for the ESP32 NES Emulator
+# Anemoia Handheld or ESP-NES - A Custom PCB for the ESP32 NES Emulator
 
-![Anemoia Handheld Project Image](path/to/your/image.png)
 
 A custom-designed, all-in-one PCB that transforms a powerful ESP32 microcontroller into a fully functional Nintendo Entertainment System (NES) emulator.
 
