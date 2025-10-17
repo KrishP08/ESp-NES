@@ -20,3 +20,12 @@ The design is centered on an ESP32, connecting it to a display that conveniently
 
 With the logic and connections all laid out, the next and most exciting step is designing the physical PCB layout. It's time to bring this thing to life!  
 
+## 10/18/2025 - Start making PCB of esp-nes   
+
+![Screenshot 2025-10-18 002241.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjcwMywicHVyIjoiYmxvYl9pZCJ9fQ==--07e0391c9dcfe09c06862154b5e65e773606bf1f/Screenshot%202025-10-18%20002241.png)
+Okay, so I'm trying to make a real PCB for my ESP-NES project.
+
+Honestly, I went into this knowing absolutely nothing. The design software looked so intimidating, and for a while, I just stared at the screen. After diving into a bunch of tutorials, I finally got the courage to just... start.
+
+I dropped the ESP32 chip in the middle, placed the buttons where they felt right, and then began the crazy puzzle of connecting all the tiny lines. This is my first real attempt. It's probably got a dozen mistakes, but it's actually starting to look like a real circuit board! Seeing this on my screen instead of a jumble of wires is an awesome feeling. A small step, but I'm proud of it.  
+
