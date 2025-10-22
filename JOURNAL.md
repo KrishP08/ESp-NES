@@ -6,10 +6,6 @@
   ==================================================================
 -->
 
-This is my journal of the design and building process of **ESP-NES**.  
-You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/517).
-
-
 ## 10/15/2025 - ESP-NES schematics  
 
 ![Screenshot 2025-10-15 124702.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjMwMiwicHVyIjoiYmxvYl9pZCJ9fQ==--bc4f4d1c8e1304f56022f6078d4e51d21699bc91/Screenshot%202025-10-15%20124702.png)
@@ -28,4 +24,16 @@ Okay, so I'm trying to make a real PCB for my ESP-NES project.
 Honestly, I went into this knowing absolutely nothing. The design software looked so intimidating, and for a while, I just stared at the screen. After diving into a bunch of tutorials, I finally got the courage to just... start.
 
 I dropped the ESP32 chip in the middle, placed the buttons where they felt right, and then began the crazy puzzle of connecting all the tiny lines. This is my first real attempt. It's probably got a dozen mistakes, but it's actually starting to look like a real circuit board! Seeing this on my screen instead of a jumble of wires is an awesome feeling. A small step, but I'm proud of it.  
+
+## 10/22/2025 -  first version of the ESP-NES PCB is complete  
+
+This has been a major undertaking, but the first version of the ESP-NES PCB is officially designed. I've spent a total of 8 hours on this over the last several days, and it's finally complete.
+
+![Screenshot 2025-10-22 164555.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDM2NywicHVyIjoiYmxvYl9pZCJ9fQ==--3ca2a90dc58291e41233b0e007e04a01a8263031/Screenshot%202025-10-22%20164555.png)
+
+Along with the board layout, I've generated the full Bill of Materials (BOM) as a CSV file and I also Public all files like schematics,pcb and more
+
+A large chunk of that time was spent just learning the fundamentals of PCB design. It's a steep learning curve, and I had to go back and update the schematics multiple times as I discovered better ways to route traces or place components.
+
+It was a challenging process, but splitting the work up made it manageable. Seeing the final, completed board layout after all that effort feels like a huge accomplishment. Next step: ordering the parts and the board itself!  
 
