@@ -56,7 +56,7 @@ This board is designed to be fully compatible with the original Anemoia-ESP32 fi
 
 Interested in building your own Anemoia Handheld?
 
-1.  **Get the PCB:** Download the Gerber files from this repository and get them manufactured by a service like JLCPCB or PCBWay.
+1.  **Get the PCB:** Download the Gerber files from this [releases](https://github.com/KrishP08/ESp-NES/releases) and get them manufactured by a service like JLCPCB or PCBWay.
 2.  **Source the Components:** Refer to the Bill of Materials (BOM) file for a complete list of parts.
 3.  **Solder Everything:** Solder all the components onto the PCB. It's recommended to start with the smallest surface-mount components first.
 4.  **Flash the Firmware:** Follow the software instructions above to flash the Anemoia emulator.
