@@ -27,7 +27,7 @@ I dropped the ESP32 chip in the middle, placed the buttons where they felt right
 
 ## 10/22/2025 -  first version of the ESP-NES PCB is complete  
 
-This has been a major undertaking, but the first version of the ESP-NES PCB is officially designed. I've spent a total of 8 hours on this over the last several days, and it's finally complete.
+This has been very hard and fun, but the first version of the ESP-NES PCB is officially designed. I've spent a total of 8 hours on this over the last several days, and it's finally complete.
 
 ![Screenshot 2025-10-22 164555.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDM2NywicHVyIjoiYmxvYl9pZCJ9fQ==--3ca2a90dc58291e41233b0e007e04a01a8263031/Screenshot%202025-10-22%20164555.png)
 
