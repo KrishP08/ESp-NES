@@ -1,4 +1,4 @@
-#ESP-NES - A Custom PCB for the ESP32 NES Emulator
+# ESP-NES - A Custom PCB for the ESP32 NES Emulator
 
 
 A custom-designed, all-in-one PCB that transforms a powerful ESP32 microcontroller into a fully functional Nintendo Entertainment System (NES) emulator.
