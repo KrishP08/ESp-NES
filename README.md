@@ -1,4 +1,4 @@
-# Anemoia Handheld or ESP-NES - A Custom PCB for the ESP32 NES Emulator
+#ESP-NES - A Custom PCB for the ESP32 NES Emulator
 
 
 A custom-designed, all-in-one PCB that transforms a powerful ESP32 microcontroller into a fully functional Nintendo Entertainment System (NES) emulator.
@@ -57,12 +57,10 @@ This board is designed to be fully compatible with the original Anemoia-ESP32 fi
 Interested in building your own Anemoia Handheld?
 
 1.  **Get the PCB:** Download the Gerber files from this repository and get them manufactured by a service like JLCPCB or PCBWay.
-    * **[Link to Your Gerber Files Here]**
 2.  **Source the Components:** Refer to the Bill of Materials (BOM) file for a complete list of parts.
 3.  **Solder Everything:** Solder all the components onto the PCB. It's recommended to start with the smallest surface-mount components first.
 4.  **Flash the Firmware:** Follow the software instructions above to flash the Anemoia emulator.
 5.  **3D Print a Case (Optional):** Download and print the case files for a finished look.
-    * **[Link to Your 3D Model Files Here]**
 6.  **Assemble and Play:** Put everything together, load up your SD card, and enjoy retro gaming!
 
 ## 🙏 Credits and Acknowledgements
