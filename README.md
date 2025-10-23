@@ -60,8 +60,7 @@ Interested in building your own Anemoia Handheld?
 2.  **Source the Components:** Refer to the Bill of Materials (BOM) file for a complete list of parts.
 3.  **Solder Everything:** Solder all the components onto the PCB. It's recommended to start with the smallest surface-mount components first.
 4.  **Flash the Firmware:** Follow the software instructions above to flash the Anemoia emulator.
-5.  **3D Print a Case (Optional):** Download and print the case files for a finished look.
-6.  **Assemble and Play:** Put everything together, load up your SD card, and enjoy retro gaming!
+5.  **Assemble and Play:** Put everything together, load up your SD card, and enjoy retro gaming!
 
 ## 🙏 Credits and Acknowledgements
 
