@@ -32,7 +32,6 @@ The custom PCB integrates the following key components:
 * **Audio:** PAM8403 Audio Amplifier & 0.5W Speaker
 * **Input:** 8 x 6x6mm Tactile Push Buttons
 * **Storage:** MicroSD Card Slot (on the display module)
-* **Power:** [e.g., TP4056 charging module, LiPo battery, power switch - *mention your power setup here*]
 
 ## 💾 Software & Firmware
 
