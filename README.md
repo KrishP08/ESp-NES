@@ -31,7 +31,7 @@ The custom PCB integrates the following key components:
 * **Display:** 2.0" 320x240 TFT IPS Display (ST7789) with built-in SPI SD card slot
 * **Audio:** PAM8403 Audio Amplifier & 0.5W Speaker
 * **Input:** 8 x 6x6mm Tactile Push Buttons
-* **Storage:** MicroSD Card Slot (on the display module)
+* **Storage:** MicroSD Card module
 
 ## 💾 Software & Firmware
 
