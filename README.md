@@ -1,4 +1,4 @@
-# ESP-NES - A Custom PCB for the ESP32 NES Emulator
+# ESP-NES - A Custom PCB for the ESP32 NES Emulator made by Shim06 
 
 
 A custom-designed, all-in-one PCB that transforms a powerful ESP32 microcontroller into a fully functional Nintendo Entertainment System (NES) emulator.
@@ -41,25 +41,70 @@ This board is designed to be fully compatible with the original Anemoia-ESP32 fi
 ### **https://github.com/Shim06/Anemoia-ESP32**
 
 ### Flashing Instructions:
+**Note : for advance build and upload (if you have to try it in Prototype board) go to the Shim06 Anemoia-ESP32 and He is the crater of the Software we are using in this pcb and here are common instruction**
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/Shim06/Anemoia-ESP32.git](https://github.com/Shim06/Anemoia-ESP32.git)
-    ```
-2.  **Open in PlatformIO:** Open the cloned folder in VS Code with the PlatformIO extension.
-3.  **Configure Pins (If Necessary):** The pin definitions in the firmware should match the connections on this PCB. If you made any changes, update them in the source code.
-4.  **Build & Upload:** Connect the ESP32 to your computer via USB and upload the firmware.
-5.  **Prepare SD Card:** Format your MicroSD card to FAT32. Create a folder named `roms` in the root directory and copy your NES game files (with a `.nes` extension) into it.
+## Getting Started
 
-## 🚀 Build Your Own
+1. Upload the `Anemoia-ESP32.ino` program into the ESP32
+2. Put .nes game roms inside the root of a microSD card
+3. Insert the microSD card into the microSD card module
+4. Power on the ESP32 and select a game from the file select menu
 
-Interested in building your own Anemoia Handheld?
+## How to build and upload
 
-1.  **Get the PCB:** Download the Gerber files from this [releases](https://github.com/KrishP08/ESp-NES/releases) and get them manufactured by a service like JLCPCB or PCBWay.
-2.  **Source the Components:** Refer to the Bill of Materials (BOM) file for a complete list of parts.
-3.  **Solder Everything:** Solder all the components onto the PCB. It's recommended to start with the smallest surface-mount components first.
-4.  **Flash the Firmware:** Follow the software instructions above to flash the Anemoia emulator.
-5.  **Assemble and Play:** Put everything together, load up your SD card, and enjoy retro gaming!
+### Step 1
+
+Either use `git clone https://github.com/Shim06/Anemoia-ESP32.git` on the command line to clone the repository or use Code → Download zip button and extract to get the files.
+
+### Step 2
+1. Download and install the Arduino IDE. 
+2. In <b> File → Preferences → Additional boards manager URLs </b> , add:
+```cmd
+https://espressif.github.io/arduino-esp32/package_esp32_index.json
+```
+3. Download the ESP32 board support `v3.2.1` through <b> Tools → Board → Boards Manager </b>. 
+> [!IMPORTANT]
+> Make sure to download version 3.2.1, as different board versions may have worse performance.
+4. Download the `SdFat` and `TFT_eSPI` libraries from <b> Tools → Manage Libraries </b>.
+
+### Step 3 - Configure TFT_eSPI
+The emulator uses a custom display configuration for the ST7789 display.
+1. Navigate to your Arduino Libraries folder:
+(Default location): `Documents/Arduino/libraries/TFT_eSPI`
+2. Open `User_Setup_Select.h` in a text editor.
+3. Comment out `#include <User_Setup.h>` and any other setup includes and add `<User_Setups/Anemoia-ST7789.h>`:
+```C++
+// #include <User_Setup.h>
+#include <User_Setups/Anemoia-ST7789.h>
+```
+4. Copy the provided `Anemoia-ST7789.h` file from this repository into
+`TFT_eSPI/User_Setups/`. Optionally, edit the `#define` pins as desired.
+> [!NOTE]
+> If using a screen with the ILI9341 driver, open `Anemoia-ST7789.h` in a text editor and comment out `#define ST7789_DRIVER` and uncomment `#define ILI9341_DRIVER`.
+> ```C++
+> // #define ST7789_DRIVER
+> #define ILI9341_DRIVER
+> ```
+
+### Step 4 - Apply custom build flags
+1. Locate your ESP32 Arduino platform directory. This is typically at:
+```cmd
+\Users\{username}\AppData\Local\Arduino15\packages\esp32\hardware\esp32\{version}\
+```
+2. Copy the `platform.txt` file from this repository and paste into that folder.
+This file defines additional compiler flags and optimizations used by Anemoia-ESP32.
+> [!WARNING]
+> Backup your `platform.txt` file if you have your own custom settings already. 
+
+### Step 5 - Upload
+1. Connect your ESP32 via USB.
+2. In the Arduino IDE, go to <b> Tools → Board </b> and select your ESP32 board (e.g., ESP32 Dev Module).
+3. Click Upload or press `Ctrl+U` to build and flash the emulator. Optionally, edit the `#define` pins as desired.
+
+Step 6 - **Prepare SD Card:** Format your MicroSD card to FAT32. Put .nes game roms inside the root of a microSD card
+
+## Build Your Own PCB OR want to change or Use it any other project
+Ypu can get the Gerber files from [releases](https://github.com/KrishP08/ESp-NES/releases) part
 
 ## 🙏 Credits and Acknowledgements
 
@@ -67,6 +112,4 @@ This project would not be possible without the incredible work done by **Shim06*
 
 * **Anemoia-ESP32 Software:** Huge thanks to **Shim06** for creating and maintaining the amazing emulator firmware. Please support the original project!
 
-## 📜 License
-
-This hardware project is open-source. Please check the `LICENSE` file for more details.
+*Feel free to fork the repository and contribute!* 🚀
