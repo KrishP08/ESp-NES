@@ -5,7 +5,7 @@ A custom-designed, all-in-one PCB that transforms a powerful ESP32 microcontroll
 # Here are Some image of pcb
 ![pcb model](./image/p1.png)
 ![pcb model](./image/p2.png)
-![pcb model](./image/p2.png)
+![pcb model](./image/p3.png)
 
 and For the code and step by guide this go to the origins Repo <https://github.com/Shim06/Anemoia-ESP32>
 
